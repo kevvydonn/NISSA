@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine 💘</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 120px;
+      background: #fff0f5;
+    }
+    button {
+      font-size: 20px;
+      padding: 12px 25px;
+      margin: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    .no {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will you be my valentines? 🥺❤️</h1>
+
+  <button class="yes" onclick="celebrate()">Yes ❤️</button>
+  <button class="no" onclick="alert('Aww 😔 maybe next time 💔')">No 💔</button>
+
+  <script>
+    function celebrate() {
+      confetti({
+        particleCount: 200,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+      alert("YAY!! ❤️🥰");
+    }
+  </script>
+
+</body>
+</html>
